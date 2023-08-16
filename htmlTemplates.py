@@ -4,22 +4,22 @@ css = '''
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
 }
 .chat-message.user {
-    background-color: #2b313e
-}
-.chat-message.bot {
     background-color: #475063
 }
+.chat-message.bot {
+    background-color: #555f77
+}
 .chat-message .avatar {
-  width: 20%;
+  width: 10%;
 }
 .chat-message .avatar img {
-  max-width: 78px;
-  max-height: 78px;
+  max-width: 60px;
+  max-height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
 .chat-message .message {
-  width: 80%;
+  width: 95%;
   padding: 0 1.5rem;
   color: #fff;
 }
@@ -28,7 +28,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="https://i.ibb.co/cN0nmSj/Screenshot-2023-05-28-at-02-37-21.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://www.svgrepo.com/show/306500/openai.svg" style="max-height: 60px; max-width: 60px; border-radius: 50%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +37,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://i.ibb.co/rdZC7LZ/Photo-logo-1.png">
+        <img src="https://www.svgrepo.com/show/307893/internet-user-software-engineer-programmer-software-developer.svg">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
